@@ -1,17 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import Car from "./App.js";
+import Model from "./Bike.js";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const myfirstelement = <h1>Hello React!</h1>;
+const secondElement = <h2>Im so fuckin horny dawg</h2>;
+const myelement = (
+  <ul>
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Cherries</li>
+  </ul>
 );
+const myModel = <Model type="Ford" />;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(myfirstelement, document.getElementById("root"));
+ReactDOM.render(secondElement, document.getElementById("rooted"));
+ReactDOM.render(myelement, document.getElementById("Sike"));
+ReactDOM.render(<Car />, document.getElementById("root1"));
+ReactDOM.render(myModel, document.getElementById("root11"));
