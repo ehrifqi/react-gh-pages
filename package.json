@@ -1,6 +1,7 @@
 {
   "name": "react-gh-pages",
   "version": "0.0.0-semantically-released",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -12,14 +13,12 @@
     "homepage": "http://ehrifqi.github.io/react-gh-pages"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "semantic-release": "semantic-release"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
+  "keywords": [
+    "semantic-release"
+  ],
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -39,6 +38,7 @@
     "gh-pages": "^3.1.0",
     "semantic-release": "^17.1.2"
   },
+  "author": "ehrifqi",
   "repository": {
     "type": "git",
     "url": "https://github.com/ehrifqi/react-gh-pages.git"
